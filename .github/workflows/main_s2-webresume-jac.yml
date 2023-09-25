@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 's2-webresume-jac'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_45793FDA149947EDB9A60E2CCC486F8A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3AE3EE4DE9574FEAA3C0C49B58F1ED3D }}
           package: .
