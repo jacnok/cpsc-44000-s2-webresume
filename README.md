@@ -1,11 +1,18 @@
-# Node.js and Express Hosted on Microsoft Azure Template
+# CPSC 44000: Web Resume
 
-Dependencies: Node.js and Express
+## Author
+Jefferson Cherrington **(@jacnok)**
 
-This repository is a template that can be used to create a Node.js and Express website for hosting on Microsoft Azure.
+## Origin
+This repository is based off a Azure hosted website template, originally created by Prof. Eric Pogue **(@EricJPogue)**.
 
-Initial Usage:
-- npm install express
-- npm start
+## Purpose
+This web resume is intended to be a snapshot of my resume as it stood in May 2023, but with some extra CSS flavor.
+
+## Dependencies
+Node.js and Express
+
+## How to Access
+Visit this link: [s2-webresume-jac.azurewebsites.net](https://s2-webresume-jac.azurewebsites.net)
 
 

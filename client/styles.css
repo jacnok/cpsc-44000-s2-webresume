@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,700;1,400;1,600;1,700&display=swap');
+                
+            
+            
+html
+{
+    /*background-color: black;*/
+    /* borrowed this code from: https://www.gradient-animator.com/ */
+    background: linear-gradient(270deg,  rgb(43, 50, 64), rgb(40, 54, 72));
+    background-size: 400% 400%;
+    min-width: 1200px;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+::selection {
+    background-color: #8ddead;
+    color: #222;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* borrowed this idea from: https://www.quackit.com/css/grid/examples/css_12_column_grid_examples.cfm */
+.grid {
+    display: grid;
+    grid-template-rows: repeat(6, .4fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: .15vw;
+  }
+
+.box {
+    color: white;
+    background: rgb(40, 54, 72);
+    text-align: center;
+    font-family: 'Besley', serif;
+    font-size: 1rem;
+    transition: all .125s ease-in-out;
+  }
+
+.box:hover {
+background: linear-gradient(270deg, #779c8e, #4a99c3);
+background-size: 400% 400%;
+color: #222;
+
+-webkit-animation: AnimationName 10s ease infinite;
+-moz-animation: AnimationName 10s ease infinite;
+animation: AnimationName 10s ease infinite;
+}
+
+  a:hover {
+    color: #222;
+  }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: -.75rem;
+    margin-top: -.35rem;
+  }
+
+.title 
+  {
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+
+.addresses
+  {
+    font-size: 1rem;
+    font-weight: 400;
+    
+  }
+
+.text-left
+{
+    text-align: left;
+    margin-top: 0;
+    padding-left: 4rem;
+}
+
+.text-right
+{
+    text-align: right;
+    margin-top: 0;
+    padding-right: 4rem;
+}
+
+h2{
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+u
+{text-underline-offset: .25rem;}
+
+hr {
+    margin: 0 4rem;
+}
+
+.box:nth-child(1) {
+    grid-column: span 12;
+    }
+
+.box:nth-child(2)
+{
+    grid-column: span 8;
+    }
+
+.box:nth-child(3)
+{
+    grid-column: span 1;
+}
+.box:nth-child(4) {
+    grid-column: span 3;
+    /*text-align: left;
+    padding: 2rem 1rem;*/
+    padding-top: 2rem;
+    }
+
+.box:nth-child(5),.box:nth-child(7){
+    grid-column: span 8;
+}
+.box:nth-child(6),.box:nth-child(8){
+    grid-column: span 4;
+}
+
+
+.box:nth-child(9), .box:nth-child(11),.box:nth-child(13),.box:nth-child(15)
+{
+    grid-column: span 9;
+    }
+.box:nth-child(10),.box:nth-child(12),.box:nth-child(14),.box:nth-child(16)
+{
+    grid-column: span 3;
+}
+
+.box:nth-child(17),.box:nth-child(18)
+{
+    grid-column: span 6;
+    }
+
+.box:nth-child(19), .box:nth-child(21),.box:nth-child(23),.box:nth-child(25),.box:nth-child(27)
+{
+    grid-column: span 9;
+    padding: .35rem 4rem;
+    }
+.box:nth-child(20),.box:nth-child(22),.box:nth-child(24),.box:nth-child(26),.box:nth-child(28)
+{
+    grid-column: span 3;
+    padding: .35rem 4rem;
+}
+    
+.box:nth-child(29),.box:nth-child(30)
+{
+    grid-column: span 6;
+    }
+
+.box:nth-child(31),.box:nth-child(33),.box:nth-child(35),.box:nth-child(37),.box:nth-child(39),.box:nth-child(41)
+{
+    grid-column: span 9;
+}
+.box:nth-child(32),.box:nth-child(34),.box:nth-child(36),.box:nth-child(38),.box:nth-child(40),.box:nth-child(42)
+{
+    grid-column: span 3;
+}
+
+.box:nth-child(43)
+{
+    grid-column: span 8;
+}
+.box:nth-child(44)
+{
+    grid-column: span 4;
+}
+
+.box:nth-child(45), .box:nth-child(47), .box:nth-child(49)
+{
+    grid-column: span 9;
+}
+
+.box:nth-child(46), .box:nth-child(48), .box:nth-child(50)
+{
+    grid-column: span 3;
+}
+
+
+@media print {
+    html
+      {
+    /*background-color: black;*/
+    /* borrowed this code from: https://www.gradient-animator.com/ */
+    background: white;
+    }
+    .grid
+    {
+        width: 1200px;
+    }
+     a, .box {
+        color: black;
+        font-size: .85rem;
+       /* border: #222 1px solid; */
+     }
+     .box:nth-child(4)
+     {
+        opacity: 0;
+     }
+     h4 {
+        font-size: 1rem;
+     }
+     h2 {
+        font-size: 1.4rem;
+     }
+     .title a
+     {font-size: 2.8rem;}
+
+     .box:nth-child(20),.box:nth-child(22),.box:nth-child(24),.box:nth-child(26),.box:nth-child(28),
+     .box:nth-child(32),.box:nth-child(36),.box:nth-child(40)
+     {
+        margin-right: 20vw;
+        text-align: right;
+        padding-left: 0;
+        padding-right: 0;
+     }
+}
