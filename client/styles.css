@@ -40,17 +40,18 @@ a {
     text-align: center;
     font-family: 'Besley', serif;
     font-size: 1rem;
-    transition: all .125s ease-in-out;
+    transition: all .25s .1s ease-in-out;
   }
 
 .box:hover {
-background: linear-gradient(270deg, #779c8e, #4a99c3);
+/* background: linear-gradient(270deg, #779c8e, #4a99c3); */
+background-color: #4a99c3;
 background-size: 400% 400%;
 color: #222;
 
--webkit-animation: AnimationName 10s ease infinite;
+/* -webkit-animation: AnimationName 10s ease infinite;
 -moz-animation: AnimationName 10s ease infinite;
-animation: AnimationName 10s ease infinite;
+animation: AnimationName 10s ease infinite; */
 }
 
   a:hover {
